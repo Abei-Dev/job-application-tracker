@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #f8fafc;
+}
+
+.app {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+}
+
+/* FORM */
+
+.job-form {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: #cbd5e1;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    background: #0f172a;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #38bdf8;
+}
+
+.add-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #38bdf8;
+    color: #082f49;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #7dd3fc;
+}
+
+/* JOBS */
+
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.job-card {
+    background: #1e293b;
+    padding: 20px;
+    border: 1px solid #334155;
+    border-radius: 12px;
+}
+
+.company-name {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.position-name {
+    margin: 8px 0 16px;
+    color: #94a3b8;
+}
+
+.status-select {
+    padding: 8px 10px;
+    background: #0f172a;
+    color: white;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.delete-btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #7f1d1d;
+    color: #fecaca;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #991b1b;
+}
+
+@media (max-width: 600px) {
+    .app {
+        width: 92%;
+        margin-top: 25px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .job-form {
+        padding: 18px;
+    }
+}
