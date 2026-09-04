@@ -15,7 +15,6 @@ function JobForm({ addJob }) {
     }
 
   
-
     function handleSubmit(e) {
         e.preventDefault()
 
