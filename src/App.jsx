@@ -34,22 +34,23 @@ function App() {
     })
   }
 
-  function deleteJob(id) {
-    setJobs(prevJobs => {
-      return prevJobs.filter(job => job.id !== id )
-    })
-  }
+
+    function deleteJob(id) {
+      setJobs(prevJobs => {
+        return prevJobs.filter(job => job.id !== id )
+      })
+    }
 
 
-  function changeStatus(id, newStatus) {
-    const updateStatus = jobs.map(job => {
-      return job.id === id
-      ? {...job, status: newStatus}
-      : job
-    })
+    function changeStatus(id, newStatus) {
+      const updateStatus = jobs.map(job => {
+        return job.id === id
+        ? {...job, status: newStatus}
+        : job
+      })
 
-    setJobs(updateStatus)
-  }
+      setJobs(updateStatus)
+    }
 
   return (
     <main className="app">

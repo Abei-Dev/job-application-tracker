@@ -10,7 +10,7 @@ function JobForm({ addJob }) {
         setCompanyName(e.target.value)
     }
 
-     function handlePositionChange(e) {
+    function handlePositionChange(e) {
         setPositionName(e.target.value)
     }
 

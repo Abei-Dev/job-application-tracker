@@ -30,7 +30,6 @@ function JobList({ jobs, deleteJob, changeStatus }) {
                     Delete
                 </button>
             </div>
-        
         )
     })
 
